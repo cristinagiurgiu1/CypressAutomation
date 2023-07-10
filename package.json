@@ -1,0 +1,37 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:test:all": "npx cypress run",
+    "cy:test:spec": "npx cypress run --spec cypress/e2e/indianguyAPI/putusers.cy.js",
+    "cy:test:tags:tests": "npx cypress run --spec cypress/e2e/tutorialsNinja/cypressTagsOnly.cy.js,cypress/e2e/tutorialsNinja/cypressTagsSkip.cy.js",
+    "cy:test:all:tutorialsNinja": "npx cypress run --spec cypress/e2e/tutorialsNinja/**/*\"",
+    "cy:test:todo:example": "npx cypress run --spec cypress/e2e/1-getting-started/todo.cy.js",
+    "cy:test:actions:locations": "npx cypress run --spec cypress/e2e/2-advanced-examples/actions.cy.js,cypress/e2e/2-advanced-examples/location.cy.js",
+    "cy:test:advanced:examples": "npx cypress run --spec cypress/e2e/2-advanced-examples/**/*\"",
+    "cy:test:all:firefox": "npx cypress run --browser firefox",
+    "cy:test:all:chrome:headed": "npx cypress run --headed --browser chrome",
+    "cy:test:all:edge": "npx cypress run --browser edge",
+    "cy:test:testpages:chrome": "npx cypress run --browser chrome --spec cypress/e2e/testpages/**/*\"",
+    "cy:test:simpleForm:firefox:headed": "npx cypress run --headed --browser firefox --spec cypress/e2e/elementInteractions/simpleForm.cy.js",
+    "cy:open:cypressQA": "npx cypress open --config-file cypressQAenv.config.js ",
+    "cy:test:todo:qa": "npx cypress run --config-file cypressQAenv.config.js --spec 'cypress/e2e/1-getting-started/todo.cy.js'",
+    "cy:test:actions:locations:qa": "npx cypress run --config-file cypressQAenv.config.js --spec cypress/e2e/2-advanced-examples/actions.cy.js,cypress/e2e/2-advanced-examples/location.cy.js",
+    "cy:open:cypressPROD": "npx cypress open --config-file cypressPRODenv.config.js "
+  },
+  "author": "Cristina",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.8.1"
+  },
+  "devDependencies": {
+    "@cypress/skip-test": "^2.6.1",
+    "@cypress/xpath": "^2.0.3",
+    "cy-verify-downloads": "^0.1.14",
+    "cypress-mochawesome-reporter": "^3.5.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+"body": "This is our test body for the comment response",
+"email": "cristina1232233223@gmail.com",
+"id" : 501,
+"name": "Using POST in cy.intercept() stubbed"
+}
