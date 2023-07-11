@@ -7,7 +7,7 @@ describe('Checkboxes', ()=>{
 
         cy.get("input[value='green']").should('be.visible').should('not.be.checked')
         cy.get("input[value='blue']").should('be.visible').should('not.be.checked')
-        cy.get("input[value='yellow']").should('be.visible').should('not.be.checked')
+        cy.get("input[value='yellow']").should('be.visible').should('not.be.checked') // this is a comment for updating files in github 
         cy.get("input[value='orange']").should('be.visible').should('not.be.checked')
         cy.get("input[value='purple']").should('be.visible').should('not.be.checked')
 
