@@ -12,3 +12,8 @@ workflows:
       - cypress/run:
           cypress-command: npx cypress run --spec cypress/e2e/APItests/*.cy.js
           install-browsers: true
+  elementInteractions:
+    jobs:
+      - cypress/run:
+          cypress-command: npx cypress run --spec cypress/e2e/elementInteractions/*.cy.js
+          install-browsers: true        
